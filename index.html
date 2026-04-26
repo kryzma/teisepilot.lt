@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teisepilot — Teisinis AI asistentas Lietuvos advokatams</title>
+    <meta name="description" content="AI asistentas su 25,000+ teismų sprendimų, Civiliniu kodeksu ir pagrindiniais LT įstatymais. Klausimai laisvu pavidalu, atsakymai su citatomis ir bylų numeriais.">
+    <meta property="og:title" content="Teisepilot — Teisinis AI asistentas Lietuvos advokatams">
+    <meta property="og:description" content="AI asistentas su 25,000+ teismų sprendimų, Civiliniu kodeksu ir pagrindiniais LT įstatymais.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%231e3a5f%22 font-family=%22Georgia%22 font-weight=%22bold%22>T</text></svg>">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --text-muted: #555555;
+            --accent: #1e3a5f;
+            --accent-light: #f0f4f8;
+            --border: #e6e6e6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            padding: 32px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 56px;
+        }
+
+        .logo {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: -0.5px;
+        }
+
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: var(--text);
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 56px;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        .lead {
+            font-size: 20px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        ul.sources {
+            list-style: none;
+            margin: 16px 0 24px 0;
+        }
+
+        ul.sources li {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        ul.sources li:last-child {
+            border-bottom: none;
+        }
+
+        ul.sources strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 4px;
+            font-size: 17px;
+        }
+
+        ul.sources span {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .pricing {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            padding: 24px 28px;
+            margin: 24px 0;
+        }
+
+        .price {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .price-note {
+            margin-top: 8px;
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .cta {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 8px;
+            transition: opacity 0.2s, transform 0.1s;
+        }
+
+        .cta:hover {
+            opacity: 0.92;
+        }
+
+        .cta:active {
+            transform: translateY(1px);
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 32px 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body { font-size: 16px; }
+            h1 { font-size: 32px; letter-spacing: -0.5px; }
+            .lead { font-size: 18px; }
+            h2 { font-size: 22px; margin-top: 40px; }
+            header { padding: 24px 0; margin-bottom: 40px; }
+            .price { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Teisepilot</div>
+        </header>
+
+        <main>
+            <h1>Teisinis AI asistentas Lietuvos advokatams</h1>
+            <p class="lead">
+                Užduokite klausimą laisvu pavidalu — sistema atsakys cituodama
+                konkrečius straipsnius ir bylų numerius. Sekundės vietoj valandų.
+            </p>
+
+            <h2>Kas sistemoje</h2>
+            <ul class="sources">
+                <li>
+                    <strong>25,000+ teismų sprendimų</strong>
+                    <span>Lietuvos Aukščiausiojo Teismo civilinė praktika nuo 2015 m. ir Kauno apygardos teismo civilinės bylos nuo 2020 m.</span>
+                </li>
+                <li>
+                    <strong>Civilinis kodeksas</strong>
+                    <span>Visi kodekso straipsniai su naujausiomis redakcijomis.</span>
+                </li>
+                <li>
+                    <strong>12 pagrindinių LT įstatymų</strong>
+                    <span>CPK, Vartotojų teisių apsaugos, Nemokumo, Statybos, Viešųjų pirkimų ir kt.</span>
+                </li>
+            </ul>
+
+            <h2>Kaip tai veikia</h2>
+            <p>
+                Klausimus užduodate natūralia kalba — kaip kolegai. Sistema randa
+                relevantiškiausius šaltinius, cituoja straipsnius bei bylų numerius
+                ir grąžina atsakymą per kelias sekundes.
+            </p>
+            <p>
+                Tinka greitai konsultacijai, praktikos paieškai, pozicijos
+                argumentavimui ar dokumentų rengimui.
+            </p>
+
+            <h2>Kaina</h2>
+            <div class="pricing">
+                <div class="price">€49 / mėn</div>
+                <p class="price-note">
+                    Vienam advokatui. Komandiniai planai — susitariant.
+                </p>
+            </div>
+
+            <h2>Susisiekti</h2>
+            <p>
+                Norėtumėte pamatyti sistemą veikiančią? Parašykite — atsiųsiu
+                prieigą ir surengsiu trumpą pristatymą.
+            </p>
+            <p>
+                <a href="mailto:kryzevicius.ma@gmail.com?subject=Teisepilot%20demo" class="cta">
+                    Užsisakyti demo
+                </a>
+            </p>
+        </main>
+
+        <footer>
+            © 2026 Teisepilot · Mantas Kryževičius
+        </footer>
+    </div>
+</body>
+</html>
